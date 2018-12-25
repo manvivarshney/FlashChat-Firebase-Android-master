@@ -32,7 +32,7 @@ public class MainChatActivity extends AppCompatActivity {
 
         // TODO: Set up the display name and get the Firebase reference
 
-        
+
 setupDisplayName();
 mDatabaseReference= FirebaseDatabase.getInstance().getReference();
         // Link the Views in the layout to the Java code
@@ -77,6 +77,7 @@ private void setupDisplayName(){
     }
 
     // TODO: Override the onStart() lifecycle method. Setup the adapter here.
+
 
     @Override
         public void onStart(){
