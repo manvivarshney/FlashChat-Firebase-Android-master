@@ -124,7 +124,9 @@ createFirebaseUser();
     }
 
     // TODO: Create a Firebase user
+
         private void createFirebaseUser(){
+
         String email= mEmailView.getText().toString();
         String password= mPasswordView.getText().toString();
         mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -146,22 +148,19 @@ createFirebaseUser();
 }
 
     // TODO: Save the display name to Shared Preferences
-private void saveDisplayName()
-{
-    String displayName= mUsernameView.getText().toString();
-    SharedPreferences prefs= getSharedPreferences(CHAT_PREFS,0);
-    prefs.edit().putString(DISPLAY_NAME_KEY, displayName).apply();
-}
-    // TODO: Create an alert dialog to show in case registration failed
-        private void showErrorDialog(String message){
-        new AlertDialog.Builder(this)
-                .setTitle("oops")
-                .setMessage(message)
-                .setPositiveButton(android.R.string.ok,null)
-                .setIcon(android.R.drawable.ic_dialog_alert)
-                .show();
-}
-
-
-
+        private void saveDisplayName()
+        {
+            String displayName= mUsernameView.getText().toString();
+            SharedPreferences prefs= getSharedPreferences(CHAT_PREFS,0);
+            prefs.edit().putString(DISPLAY_NAME_KEY, displayName).apply();
+        }
+        // TODO: Create an alert dialog to show in case registration failed
+        private void showErrorDialog(String message) {
+            new AlertDialog.Builder(this)
+                    .setTitle("oops")
+                    .setMessage(message)
+                    .setPositiveButton(android.R.string.ok, null)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .show();
+        }
 }

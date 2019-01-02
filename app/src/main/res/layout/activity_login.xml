@@ -27,11 +27,11 @@
             android:layout_height="wrap_content"
             android:hint="@string/prompt_email"
             android:imeOptions="actionNext"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
             android:inputType="textEmailAddress"
             android:maxLines="1"
-            android:textIsSelectable="false"/>
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textIsSelectable="false" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -43,17 +43,16 @@
 
         <EditText
             android:id="@+id/login_password"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:hint="@string/prompt_password"
             android:imeActionId="@integer/login"
             android:imeActionLabel="@string/action_sign_in_short"
             android:imeOptions="actionUnspecified"
             android:inputType="textPassword"
             android:maxLines="1"
-            />
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
     </android.support.design.widget.TextInputLayout>
 
